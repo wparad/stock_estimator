@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C4DE81CF-834F-4701-9BD8-E7FCD926A2DF}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>StockEstimator.Client</RootNamespace>
+    <AssemblyName>Client</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <Externalconsole>true</Externalconsole>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <Externalconsole>true</Externalconsole>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.ServiceModel" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="app.desktop">
+      <DeployService-TargetDirectoryId>Linux.DesktopApplications</DeployService-TargetDirectoryId>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <ProjectReference Include="..\StockEstimator\StockEstimator.csproj">
+      <Project>{8948FC44-61F5-4F28-B98B-B441B11D59DB}</Project>
+      <Name>StockEstimator</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Contracts\StockEstimator.Contracts.csproj">
+      <Project>{F1CC1AA0-2582-445B-82E9-130B6538CDAF}</Project>
+      <Name>StockEstimator.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\WcfService\WcfService.csproj">
+      <Project>{2F866C21-5190-4492-9581-7FB16F9D6532}</Project>
+      <Name>WcfService</Name>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

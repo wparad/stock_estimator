@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{29456F2D-AABE-4774-B417-31FF2EF61F23}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>StockEstimator.Service.Main</RootNamespace>
+    <AssemblyName>Main</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <Externalconsole>true</Externalconsole>
+    <EnvironmentVariables>
+      <EnvironmentVariables>
+        <Variable name="MONO_STRICT_MS_COMPLIANT" value="yes" />
+      </EnvironmentVariables>
+    </EnvironmentVariables>
+    <CustomCommands>
+      <CustomCommands>
+        <Command type="AfterBuild" command="../../../Deployment/deploy_service.sh ${ProjectName}" workingdir="${ProjectDir}/bin/${ProjectConfigName}" externalConsole="true" />
+        <Command type="Execute" command="bin/${ProjectConfigName}/Main.exe &quot;Something&quot;" workingdir="${ProjectDir}/bin/${ProjectConfigName}" externalConsole="true" />
+      </CustomCommands>
+    </CustomCommands>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <Externalconsole>true</Externalconsole>
+    <CustomCommands>
+      <CustomCommands>
+        <Command type="AfterBuild" command="../../../Deployment/deploy_service.sh ${ProjectName}" workingdir="${ProjectDir}/bin/${ProjectConfigName}" externalConsole="true" />
+      </CustomCommands>
+    </CustomCommands>
+    <EnvironmentVariables>
+      <EnvironmentVariables>
+        <Variable name="MONO_STRICT_MS_COMPLIANT" value="yes" />
+      </EnvironmentVariables>
+    </EnvironmentVariables>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.ServiceModel" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Content Include="app.desktop">
+      <DeployService-TargetDirectoryId>Linux.DesktopApplications</DeployService-TargetDirectoryId>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Contracts\StockEstimator.Contracts.csproj">
+      <Project>{F1CC1AA0-2582-445B-82E9-130B6538CDAF}</Project>
+      <Name>StockEstimator.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\StockEstimator\StockEstimator.csproj">
+      <Project>{8948FC44-61F5-4F28-B98B-B441B11D59DB}</Project>
+      <Name>StockEstimator</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\StockEstimator.Service.csproj">
+      <Project>{584231C8-967E-42E4-AA37-56ED99A8FD32}</Project>
+      <Name>StockEstimator.Service</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\WcfService\WcfService.csproj">
+      <Project>{2F866C21-5190-4492-9581-7FB16F9D6532}</Project>
+      <Name>WcfService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Client\StockEstimator.Client.csproj">
+      <Project>{C4DE81CF-834F-4701-9BD8-E7FCD926A2DF}</Project>
+      <Name>StockEstimator.Client</Name>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

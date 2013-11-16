@@ -1,0 +1,7 @@
+[Desktop Entry]
+Encoding=UTF-8
+Type=Application
+Name=Stock Estimator Client
+Exec=client
+Terminal=false
+GenericName=Stock Estimator Client

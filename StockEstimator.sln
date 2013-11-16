@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StockEstimator", "StockEstimator\StockEstimator.csproj", "{8948FC44-61F5-4F28-B98B-B441B11D59DB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StockEstimator.InformationRepository", "InformationRepository\StockEstimator.InformationRepository.csproj", "{33AC26C2-6F7E-4F85-B93C-07E6A4EF60DA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StockEstimator.Service", "Service\StockEstimator.Service.csproj", "{584231C8-967E-42E4-AA37-56ED99A8FD32}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StockEstimator.Service.Main", "Service\Main\StockEstimator.Service.Main.csproj", "{29456F2D-AABE-4774-B417-31FF2EF61F23}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StockEstimator.Contracts", "Contracts\StockEstimator.Contracts.csproj", "{F1CC1AA0-2582-445B-82E9-130B6538CDAF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfService", "..\WcfService\WcfService.csproj", "{2F866C21-5190-4492-9581-7FB16F9D6532}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StockEstimator.Client", "Client\StockEstimator.Client.csproj", "{C4DE81CF-834F-4701-9BD8-E7FCD926A2DF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{29456F2D-AABE-4774-B417-31FF2EF61F23}.Debug|x86.ActiveCfg = Debug|x86
+		{29456F2D-AABE-4774-B417-31FF2EF61F23}.Debug|x86.Build.0 = Debug|x86
+		{29456F2D-AABE-4774-B417-31FF2EF61F23}.Release|x86.ActiveCfg = Release|x86
+		{29456F2D-AABE-4774-B417-31FF2EF61F23}.Release|x86.Build.0 = Release|x86
+		{2F866C21-5190-4492-9581-7FB16F9D6532}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{2F866C21-5190-4492-9581-7FB16F9D6532}.Debug|x86.Build.0 = Debug|Any CPU
+		{2F866C21-5190-4492-9581-7FB16F9D6532}.Release|x86.ActiveCfg = Release|Any CPU
+		{2F866C21-5190-4492-9581-7FB16F9D6532}.Release|x86.Build.0 = Release|Any CPU
+		{33AC26C2-6F7E-4F85-B93C-07E6A4EF60DA}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{33AC26C2-6F7E-4F85-B93C-07E6A4EF60DA}.Debug|x86.Build.0 = Debug|Any CPU
+		{33AC26C2-6F7E-4F85-B93C-07E6A4EF60DA}.Release|x86.ActiveCfg = Release|Any CPU
+		{33AC26C2-6F7E-4F85-B93C-07E6A4EF60DA}.Release|x86.Build.0 = Release|Any CPU
+		{584231C8-967E-42E4-AA37-56ED99A8FD32}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{584231C8-967E-42E4-AA37-56ED99A8FD32}.Debug|x86.Build.0 = Debug|Any CPU
+		{584231C8-967E-42E4-AA37-56ED99A8FD32}.Release|x86.ActiveCfg = Release|Any CPU
+		{584231C8-967E-42E4-AA37-56ED99A8FD32}.Release|x86.Build.0 = Release|Any CPU
+		{8948FC44-61F5-4F28-B98B-B441B11D59DB}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{8948FC44-61F5-4F28-B98B-B441B11D59DB}.Debug|x86.Build.0 = Debug|Any CPU
+		{8948FC44-61F5-4F28-B98B-B441B11D59DB}.Release|x86.ActiveCfg = Release|Any CPU
+		{8948FC44-61F5-4F28-B98B-B441B11D59DB}.Release|x86.Build.0 = Release|Any CPU
+		{C4DE81CF-834F-4701-9BD8-E7FCD926A2DF}.Debug|x86.ActiveCfg = Debug|x86
+		{C4DE81CF-834F-4701-9BD8-E7FCD926A2DF}.Debug|x86.Build.0 = Debug|x86
+		{C4DE81CF-834F-4701-9BD8-E7FCD926A2DF}.Release|x86.ActiveCfg = Release|x86
+		{C4DE81CF-834F-4701-9BD8-E7FCD926A2DF}.Release|x86.Build.0 = Release|x86
+		{F1CC1AA0-2582-445B-82E9-130B6538CDAF}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{F1CC1AA0-2582-445B-82E9-130B6538CDAF}.Debug|x86.Build.0 = Debug|Any CPU
+		{F1CC1AA0-2582-445B-82E9-130B6538CDAF}.Release|x86.ActiveCfg = Release|Any CPU
+		{F1CC1AA0-2582-445B-82E9-130B6538CDAF}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Service\Main\StockEstimator.Service.Main.csproj
+		Policies = $0
+		$0.DotNetNamingPolicy = $1
+		$1.DirectoryNamespaceAssociation = Flat
+		$1.ResourceNamePolicy = FileFormatDefault
+	EndGlobalSection
+EndGlobal
