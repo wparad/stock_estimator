@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StockEstimator.Service.Main
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StockEstimator.Contracts", "Contracts\StockEstimator.Contracts.csproj", "{F1CC1AA0-2582-445B-82E9-130B6538CDAF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfService", "..\WcfService\WcfService.csproj", "{2F866C21-5190-4492-9581-7FB16F9D6532}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfService", "..\wcfservice_library\WcfService.csproj", "{2F866C21-5190-4492-9581-7FB16F9D6532}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StockEstimator.Client", "Client\StockEstimator.Client.csproj", "{C4DE81CF-834F-4701-9BD8-E7FCD926A2DF}"
 EndProject

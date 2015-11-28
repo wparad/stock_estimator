@@ -11,8 +11,8 @@ namespace StockEstimator.Service
     [ServiceBehavior(Namespace = Constants.EstimatorNamespace)]
 	public class EstimatorService : IEstimatorService
 	{
-		private GoogleStockProvider googleStockProvider{get; set;}
-		private YahooStockProvider yahooStockProvider{get; set;}
+		public GoogleStockProvider googleStockProvider{get; set;}
+		public YahooStockProvider yahooStockProvider{get; set;}
 		private Estimator estimator{get; set;}
 		private DatabaseWriter writer{get; set;}
 		public EstimatorService()

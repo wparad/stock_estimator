@@ -1,0 +1,22 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Service/GoogleStockProvider.cs">
+    <Files>
+      <File FileName="../wcfservice_library/ServiceClient.cs" Line="1" Column="1" />
+      <File FileName="../wcfservice_library/ServiceCreator.cs" Line="1" Column="1" />
+      <File FileName="Service/GoogleStockProvider.cs" Line="21" Column="5" />
+      <File FileName="Service/Main/Main.cs" Line="16" Column="1" />
+      <File FileName="Service/EstimatorService.cs" Line="24" Column="1" />
+      <File FileName="InformationRepository/DatabaseAccess.cs" Line="15" Column="24" />
+      <File FileName="Service/DatabaseWriter.cs" Line="11" Column="2" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/home/warren/Desktop/git_repos/stock_estimator/Service/GoogleStockProvider.cs" line="32" />
+      <Breakpoint file="/home/warren/Desktop/git_repos/stock_estimator/Service/GoogleStockProvider.cs" line="28" />
+      <Breakpoint file="/home/warren/Desktop/git_repos/stock_estimator/Service/GoogleStockProvider.cs" line="23" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

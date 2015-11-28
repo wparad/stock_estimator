@@ -14,6 +14,9 @@ namespace StockEstimator.Service.Main
 			if(args.Length > 0)
 			{
 				var service = new EstimatorService();
+				var stockinfo = service.googleStockProvider.GetStockInformation(Symbol.F);
+				Console.WriteLine (stockinfo);
+				/*
 				var list = service.GetMovingAverage5v30();
 				foreach(var l in list)
 				{
@@ -30,7 +33,7 @@ namespace StockEstimator.Service.Main
 				{
 					Console.WriteLine (l.ToString());
 				}
-				
+				*/
 				return;
 			}
 			

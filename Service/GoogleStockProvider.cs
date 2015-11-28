@@ -19,7 +19,8 @@ namespace StockEstimator.Service
 			XDocument doc = null;
 			try
 			{
-				url = String.Format("http://www.google.com/ig/api?stock={0}", symbol);
+
+				url = String.Format(@"https://www.google.com/finance/info?client=ig&q=F&fstype=ii", symbol);
 	            doc = XDocument.Load(url);
 			}
 			catch(Exception exception)

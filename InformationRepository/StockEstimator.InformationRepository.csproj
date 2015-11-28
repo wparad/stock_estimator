@@ -34,7 +34,7 @@
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data" />
     <Reference Include="MySql.Data">
-      <HintPath>..\..\SQLDatabase\cs_v4\MySql.Data.dll</HintPath>
+      <HintPath>..\MySql.Data.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
